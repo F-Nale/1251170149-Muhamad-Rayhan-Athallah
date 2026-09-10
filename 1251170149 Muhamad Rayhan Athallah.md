@@ -1,36 +1,38 @@
 # BAGIAN A: RANCANGAN ALGORITMA DENGAN KARAKTERISTIK LENGKAP
 ## Studi Kasus: Algoritma Pemesanan Makanan Secara Online via Aplikasi.
 ### Langkah-langkah Melakukan Pemesanan Makanan Secara Online
-1. Langkah 1: User membuka aplikasi pada hanphone, melihat daftar restoran yang tersedia.
-2. Langkah 2: User memilih satu restoran.
-3. Langkah 3: User melihat menu dari restoran tersebut.
-4. Langkah 4: User memilih menu beserta jumlahnya, tambahkan ke keranjang.
-5. Langkah 5: Menghtung total harga menu.
-6. Langkah 6: Tambahkan ongkos kirim kedalam total harga.
-7. Langkah 7: Tampilkan total yang harus user bayar.
-8. Langkah 8: Pilih metode pembayaran (via transfer bank atau e-wallet).
-9. Langkah 9: Jika pembayaran berhasil, pesanan dikirim ke dapur restoran untuk diproses. Jika pembayaran gagal, user diperintahkan untuk mencoba ulang pembayaran atau batalkan pesanan.
+- Langkah 1: User membuka aplikasi, melihat daftar restoran yang tersedia.
+- Langkah 2: User memilih satu restoran.
+- Langkah 3: User melihat menu dari restoran tersebut.
+- Langkah 4: User memilih menu beserta jumlahnya, tambahkan ke keranjang.
+- Langkah 5: Menghitung total harga menu.
+- Langkah 6: User memasukkan alamat pengiriman.
+- Langkah 7: Menghitung total ongkos kirim.
+- Langkah 8: Tambahkan ongkos kirim kedalam total harga.
+- Langkah 9: Tampilkan total yang harus user bayar.
+- Langkah 10: Pilih metode pembayaran (via transfer bank atau e-wallet).
+- Langkah 11: Jika pembayaran berhasil, pesanan dikirim ke dapur restoran untuk diproses. Jika pembayaran gagal, user diperintahkan untuk mencoba ulang pembayaran atau pesanan gagal.
 
 ### Pemenuhan 5 Karakteristik Utama Algoritma:
-- Input: Daftar restoran, daftar menu, pilihan restoran, pilihan menu & jumlahnya, tarif ongkos kirim, dan pilihan metode pembayaran.
+- Input: Daftar restoran, daftar menu, pilihan restoran, pilihan menu serta jumlah, alamat, metode pembayaran.
 - Output: Pesanan berhasil dikirim ke restoran beserta dengan rincian pembayaran.
-- Definiteness:
-- Finiteness:
+- Definiteness: 
+- Finiteness: Sistem akan berhenti apabila pesanan telah berhasil dikirim ke dapur restoran atau apabila transaksi dibatalkan atau gagal di tahap pembayaran.
 - Effectiveness:
 
 # BAGIAN B: ANALISIS PEMILIHAN STRUKTUR DATA
 ## Memilih struktur data yang paling tepat (Array, Linked List, Stack, Queue, Binary Search Tree, Hash Table, atau Graph) untuk menyelesaikan 3 skenario berikut:
 ### Skenario 1 (Fitur Fitur Undo / Redo):
-- Struktur data terpilih: Stack.
-- Alasan: Karena peta memiliki kesamaan seperti jaringan yang saling terhubung antar titik. Jadi sistem akan mencari dan membandingkan semua jaringan atau jalanan penghubung antar titik atau kota lalu memilih rute tercepat.
+- Struktur data terpilih: Stack 
+- Alasan: Karena stack mememiliki metode LIFO yaitu yang paling awal dihapus yang paling cepat bisa diakses Kembali dan cocok untuk undo / redo
 
 ### Skenario 2 (Peta Navigasi Rute Perjalanan):
 - Struktur data terpilih: Graph.
-- Alasan: Karena peta memiliki kesamaan seperti jaringan yang saling terhubung antar titik. Jadi sistem akan mencari dan membandingkan semua jaringan atau jalanan penghubung antar titik atau kota lalu memilih rute tercepat.
+- Alasan: Karena peta terdiri dari lokasi atau kota yang terhubung melalui jalanan, hal ini sangat mirip dengan struktur yang dimiliki oleh graph. Sistem graph akan mengukur jarak lalu membandingkan kemungkinan jarak atau rute yang ada pada lokasi a dan lokasi b dan memilih jarak yang paling sinkat dan cepat.
 
 ### Skenario 3 (Sistem Login Pengguna Berbasis Username):
 - Struktur data terpilih: Hash Table.
-- Alasan: Karena hashtable memberikan kunci berupa angka sesuai dengan data user, jadi sistem akan langsung membaca kunci dan langsung menuju data user yang dituju.
+- Alasan: Karena hash table dapat mengubah username menjadi kunci angka unik, angka tersebut dapat digunakan untuk menunjukkan lokasi data dengan cepat ketika kita melakukkan login. 
 
 # BAGIAN C: EKSPLORASI ANALOGI MANDIRI
 ## Membuat analogi kehidupan sehari-hari dari salah satu struktur data (Array, Linked List, Stack, Queue, Tree, Graph, atau Hash Table)
