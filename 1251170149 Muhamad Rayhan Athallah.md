@@ -12,7 +12,7 @@
 9. Langkah 9: Jika pembayaran berhasil, pesanan dikirim ke dapur restoran untuk diproses. Jika pembayaran gagal, user diperintahkan untuk mencoba ulang pembayaran atau batalkan pesanan.
 
 ### Pemenuhan 5 Karakteristik Utama Algoritma:
-- Input:
+- Input: Daftar restoran, daftar menu, pilihan restoran, pilihan menu & jumlahnya, tarif ongkos kirim, dan pilihan metode pembayaran.
 - Output: Pesanan berhasil dikirim ke restoran beserta dengan rincian pembayaran.
 - Definiteness:
 - Finiteness:
