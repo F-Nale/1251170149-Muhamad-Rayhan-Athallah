@@ -36,8 +36,7 @@
 ## Membuat analogi kehidupan sehari-hari dari salah satu struktur data (Array, Linked List, Stack, Queue, Tree, Graph, atau Hash Table)
 ### Analogi yang dipilih:
 - Queue.
-### i. Nama Analogi:
-- Antrian pemesanan nasi padang pada rumah makan padang.
-### ii. Cara Kerja Analogi:
-- Pembeli yang paling pertama datang dilayani lebidulu, pembeli yang baru saja datang langsung berdiri dibelakngnya, Setelah makanan dibungkus dan dibayar pembeli paling pertama keluar dari antrian dan pembeli dibelakangnya maju.
-### iii. 
+### Penjelasan:
+- i. Nama Analogi: Antrian pemesanan nasi padang pada rumah makan padang.
+- ii. Cara Kerja Analogi: Pembeli yang paling pertama datang dilayani lebidulu, pembeli yang baru saja datang langsung berdiri dibelakngnya, Setelah makanan dibungkus dan dibayar pembeli paling pertama keluar dari antrian dan pembeli dibelakangnya maju.
+- iii. 
