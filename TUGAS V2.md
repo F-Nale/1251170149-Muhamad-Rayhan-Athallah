@@ -1,36 +1,33 @@
 # Analisis Komponen
   A. Variabel dan tipe data
-  -is_member: Boolean
-  -jumlah_buku: Integer
-  -total_awal: Real/Float
-  -persen_diskon: Real/Float
-  -nominal_diskon: Real/Float
-  -total_bayar: Real/Float
+  - is_member: Boolean
+  - jumlah_buku: Integer
+  - total_awal: Real/Float
+  - persen_diskon: Real/Float
+  - nominal_diskon: Real/Float
+  - total_bayar: Real/Float
   B. Jenis struktur kontroL
-  -percabangan
-  -perulangan
+  - percabangan
+  - perulangan
 
 # Penyusunan Pseudocode
-PROGRAM KasirTokoBukuTetanggaKita
-DEKLARASI:
-  is_member: boolean
-  jumlah_buku: integer
-  total_awal: real
-  diskon: real
-  total_akhir: real
-
-  ALGORITMA:
-  INPUT
-    (Apakah Pelanggan Member? (TRUE/FALSE))
-  REPEAT
-  INPUT 
+    PROGRAM KasirTokoBukuTetanggaKita
+    DEKLARASI:
+      is_member: boolean
+      jumlah_buku: integer
+      total_awal: real
+      diskon: real
+      total_akhir: real
+    ALGORITMA:
+      INPUT (Apakah Pelanggan Member? (TRUE/FALSE))
+      REPEAT
+      INPUT 
        Masukkan Total Belanja Awal
        Masukkan Jumlah Buku
-    IF (total_awal <= 0 OR jumlah_buku <= 0) THEN
+      IF (total_awal <= 0 OR jumlah_buku <= 0) THEN
           ("Input tidak valid! Total belanja dan jumlah buku harus lebih dari 0. Silakan coba lagi")
-    ENDIF
-  INPUT
-     (total_awal > 0 DAN jumlah_buku > 0)
+      ENDIF
+      INPUT (total_awal > 0 DAN jumlah_buku > 0)
      STATUS " REMEDIAL "
     IF    (is_member = TRUE) THEN
         IF (total_awal >= 150000 DAN jumlah_buku >= 3) THEN
