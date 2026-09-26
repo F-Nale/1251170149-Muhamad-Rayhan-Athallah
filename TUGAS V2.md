@@ -25,7 +25,7 @@
           INPUT(total_awal)
           INPUT(jumlah_buku)
           IF (total_awal < 0) OR (jumlah_buku < 1) THEN
-             OUTPUT("Input tidak valid. Silakan masukkan ulang data.")
+             OUTPUT("Input data tidak valid. Silakan masukkan ulang data.")
           ENDIF
        UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
        IF (is_member = TRUE) THEN
