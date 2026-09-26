@@ -54,3 +54,5 @@
 
     OUTPUT(nominal_diskon)
     OUTPUT(total_bayar)
+
+# Uji Logika / Trace Table
