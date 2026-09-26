@@ -34,23 +34,23 @@
         ENDIF
     UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
 
-    persen_diskon ← 0
+    persen_diskon <= 0
 
     IF (is_member = "TRUE") THEN
-        persen_diskon ← 0.10
+        persen_diskon <= 0.10
         IF (total_awal >= 200000) AND (jumlah_buku > 3) THEN
-            persen_diskon ← 0.15
+            persen_diskon <= 0.15
         ENDIF
     ELSE
         IF (total_awal >= 300000) THEN
-            persen_diskon ← 0.05
+            persen_diskon <= 0.05
         ELSE
-            persen_diskon ← 0
+            persen_diskon <= 0
         ENDIF
     ENDIF
 
-    nominal_diskon ← total_awal * persen_diskon
-    total_bayar ← total_awal - nominal_diskon
+    nominal_diskon <= total_awal * persen_diskon
+    total_bayar <= total_awal - nominal_diskon
 
     OUTPUT(nominal_diskon)
     OUTPUT(total_bayar)
