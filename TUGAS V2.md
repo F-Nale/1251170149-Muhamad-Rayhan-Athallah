@@ -22,10 +22,10 @@
     ALGORITMA:
     REPEAT
         INPUT(is_member)
-        IF (is_member <> "ya") AND (is_member <> "tidak") THEN
-            OUTPUT("Input tidak valid. Ketik ya atau tidak.")
+        IF (is_member <> "TRUE") AND (is_member <> "FALSE") THEN
+            OUTPUT("Input tidak valid. Ketik TRUE atau FALSE.")
         ENDIF
-    UNTIL (is_member = "ya") OR (is_member = "tidak")
+    UNTIL (is_member = "TRUE") OR (is_member = "FALSE")
     REPEAT
         INPUT(total_awal)
         INPUT(jumlah_buku)
@@ -36,7 +36,7 @@
 
     persen_diskon ← 0
 
-    IF (is_member = "ya") THEN
+    IF (is_member = "TRUE") THEN
         persen_diskon ← 0.10
         IF (total_awal >= 200000) AND (jumlah_buku > 3) THEN
             persen_diskon ← 0.15
