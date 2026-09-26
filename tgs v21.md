@@ -18,7 +18,7 @@
        IF (is_member = TRUE) THEN
           persen_diskon ← 0.10
           IF (total_awal >= 200000) AND (jumlah_buku >= 3) THEN
-             persen_diskon ← persen_diskon + 0.05     // total menjadi 15%
+             persen_diskon ← persen_diskon + 0.05
           ENDIF
        ELSE
           IF (total_awal >= 300000) THEN
