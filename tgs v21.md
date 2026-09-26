@@ -15,7 +15,7 @@
              OUTPUT("Input tidak valid. Silakan masukkan ulang data.")
           ENDIF
        UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
-       IF (is_member = true) THEN
+       IF (is_member = TRUE) THEN
           persen_diskon ← 0.10
           IF (total_awal >= 200000) AND (jumlah_buku >= 3) THEN
              persen_diskon ← persen_diskon + 0.05     // total menjadi 15%
