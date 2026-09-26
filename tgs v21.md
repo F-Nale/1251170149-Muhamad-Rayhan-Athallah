@@ -1,4 +1,4 @@
-    PROGRAM HitungDiskonTokoBukuV2
+    PROGRAM KasirTokoBukuKitaV2
     DEKLARASI:
        is_member      : boolean
        total_awal     : real
