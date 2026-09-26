@@ -11,9 +11,9 @@
   - perulangan
 
 # Penyusunan Pseudocode
-    PROGRAM KasirTokoBuku
+    PROGRAM KasirTokoBukuKita
     DEKLARASI:
-    is_member: string
+    is_member: boolean
     jumlah_buku: integer
     total_awal: real
     persen_diskon: real
@@ -22,21 +22,21 @@
     ALGORITMA:
     REPEAT
         INPUT(is_member)
-        IF (is_member <> "yes") AND (is_member <> "no") THEN
-            OUTPUT("Input tidak valid! Ketik yes atau no.")
+        IF (is_member <> "ya") AND (is_member <> "tidak") THEN
+            OUTPUT("Input tidak valid. Ketik ya atau tidak.")
         ENDIF
-    UNTIL (is_member = "yes") OR (is_member = "no")
+    UNTIL (is_member = "ya") OR (is_member = "tidak")
     REPEAT
         INPUT(total_awal)
         INPUT(jumlah_buku)
         IF (total_awal < 0) OR (jumlah_buku < 1) THEN
-            OUTPUT("Input tidak valid! Total belanja tidak boleh negatif dan jumlah buku minimal 1. Silakan masukkan ulang.")
+            OUTPUT("Input tidak valid. Total belanja tidak boleh negatif dan jumlah buku minimal 1. Silakan masukkan ulangi.")
         ENDIF
     UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
 
     persen_diskon ← 0
 
-    IF (is_member = "yes") THEN
+    IF (is_member = "ya") THEN
         persen_diskon ← 0.10
         IF (total_awal >= 200000) AND (jumlah_buku > 3) THEN
             persen_diskon ← 0.15
