@@ -11,48 +11,49 @@
   - perulangan
 
 # Penyusunan Pseudocode
-    PROGRAM KasirTokoBukuTetanggaKita
+    PROGRAM KasirTokoBuku
     DEKLARASI:
-      is_member: boolean
-      jumlah_buku: integer
-      total_awal: real
-      diskon: real
-      total_akhir: real
+    is_member: string
+    jumlah_buku: integer
+    total_awal: real
+    persen_diskon: real
+    nominal_diskon: real
+    total_bayar: real
     ALGORITMA:
-      INPUT (Apakah Pelanggan Member? (TRUE/FALSE))
-      REPEAT
-      INPUT 
-       Masukkan Total Belanja Awal
-       Masukkan Jumlah Buku
-      IF (total_awal <= 0 OR jumlah_buku <= 0) THEN
-          ("Input tidak valid! Total belanja dan jumlah buku harus lebih dari 0. Silakan coba lagi")
-      ENDIF
-      INPUT (total_awal > 0 DAN jumlah_buku > 0)
-     STATUS " REMEDIAL "
-    IF    (is_member = TRUE) THEN
-        IF (total_awal >= 150000 DAN jumlah_buku >= 3) THEN
-            diskon <- 0.15   // Diskon 15%
-        ELSE
-            diskon <- 0.10   // Diskon 10%
-     ENDIF
-           STATUS " SUKSES "
-    IF      (total_awal >= 200000) THEN
-            diskon <- 0.05   // Diskon 5%
-        ELSE IF (total_awal >= 100000 DAN jumlah_buku >= 2) THEN
-            diskon <- 0.03   // Diskon 3%
-        ELSE
-           STATUS " REMEDIAL "
-            diskon <- 0.00   // Tidak dapat diskon
+    REPEAT
+        INPUT(is_member)
+        IF (is_member <> "yes") AND (is_member <> "no") THEN
+            OUTPUT("Input tidak valid! Ketik yes atau no.")
         ENDIF
-           STATUS " SUKSES "
-           total_akhir <- total_awal - (total_awal KALI diskon)
-        OUTPUT(nominal_diskon)
-        OUTPUT(total_bayar)
-        SELESAI
-           STATUS " SUKSES "
-           
-           
-           
+    UNTIL (is_member = "yes") OR (is_member = "no")
+    REPEAT
+        INPUT(total_awal)
+        INPUT(jumlah_buku)
+        IF (total_awal < 0) OR (jumlah_buku < 1) THEN
+            OUTPUT("Input tidak valid! Total belanja tidak boleh negatif dan jumlah buku minimal 1. Silakan masukkan ulang.")
+        ENDIF
+    UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
+
+    persen_diskon ← 0
+
+    IF (is_member = "yes") THEN
+        persen_diskon ← 0.10
+        IF (total_awal >= 200000) AND (jumlah_buku > 3) THEN
+            persen_diskon ← 0.15
+        ENDIF
+    ELSE
+        IF (total_awal >= 300000) THEN
+            persen_diskon ← 0.05
+        ELSE
+            persen_diskon ← 0
+        ENDIF
+    ENDIF
+
+    nominal_diskon ← total_awal * persen_diskon
+    total_bayar ← total_awal - nominal_diskon
+
+    OUTPUT(nominal_diskon)
+    OUTPUT(total_bayar)
 
     
 
