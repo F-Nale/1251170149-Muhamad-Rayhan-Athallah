@@ -11,48 +11,38 @@
   - perulangan
 
 # Penyusunan Pseudocode
-    PROGRAM KasirTokoBukuKita
+    PROGRAM KasirTokoBukuKitaV2
     DEKLARASI:
-    is_member: boolean
-    jumlah_buku: integer
-    total_awal: real
-    persen_diskon: real
-    nominal_diskon: real
-    total_bayar: real
+       is_member      : boolean
+       total_awal     : real
+       jumlah_buku    : integer
+       persen_diskon  : real
+       nominal_diskon : real
+       total_bayar    : real
     ALGORITMA:
-    REPEAT
-        INPUT(is_member)
-        IF (is_member <> "TRUE") AND (is_member <> "FALSE") THEN
-            OUTPUT("Input tidak valid. Ketik TRUE atau FALSE.")
-        ENDIF
-    UNTIL (is_member = "TRUE") OR (is_member = "FALSE")
-    REPEAT
-        INPUT(total_awal)
-        INPUT(jumlah_buku)
-        IF (total_awal < 0) OR (jumlah_buku < 1) THEN
-            OUTPUT("Input tidak valid. Total belanja tidak boleh negatif dan jumlah buku minimal 1. Silakan masukkan ulangi.")
-        ENDIF
-    UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
-
-    persen_diskon <= 0
-
-    IF (is_member = "TRUE") THEN
-        persen_diskon <= 0.10
-        IF (total_awal >= 200000) AND (jumlah_buku >= 3) THEN
-            persen_diskon <= 0.15
-        ENDIF
-    ELSE
-        IF (total_awal >= 300000) THEN
-            persen_diskon <= 0.05
-        ELSE
-            persen_diskon <= 0
-        ENDIF
-    ENDIF
-
-    nominal_diskon <= total_awal * persen_diskon
-    total_bayar <= total_awal - nominal_diskon
-
-    OUTPUT(nominal_diskon)
-    OUTPUT(total_bayar)
+       INPUT(is_member)
+       REPEAT
+          INPUT(total_awal)
+          INPUT(jumlah_buku)
+          IF (total_awal < 0) OR (jumlah_buku < 1) THEN
+             OUTPUT("Input tidak valid. Silakan masukkan ulang data.")
+          ENDIF
+       UNTIL (total_awal >= 0) AND (jumlah_buku >= 1)
+       IF (is_member = TRUE) THEN
+          persen_diskon ← 0.10
+          IF (total_awal >= 200000) AND (jumlah_buku >= 3) THEN
+             persen_diskon ← persen_diskon + 0.05
+          ENDIF
+       ELSE
+          IF (total_awal >= 300000) THEN
+             persen_diskon ← 0.05
+          ELSE
+             persen_diskon ← 0
+          ENDIF
+       ENDIF
+       nominal_diskon ← total_awal * persen_diskon
+       total_bayar    ← total_awal - nominal_diskon
+       OUTPUT(nominal_diskon)
+       OUTPUT(total_bayar)
 
 # Uji Logika / Trace Table
