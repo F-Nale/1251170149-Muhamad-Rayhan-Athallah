@@ -6,6 +6,7 @@
   - persen_diskon: Real/Float
   - nominal_diskon: Real/Float
   - total_bayar: Real/Float
+
   B. Jenis struktur kontroL
   - percabangan
   - perulangan
