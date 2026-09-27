@@ -1,25 +1,25 @@
 # Analisis Komponen
   A. Variabel dan tipe data
-  - is_member: Boolean
-  - jumlah_buku: Integer
-  - total_awal: Real/Float
-  - persen_diskon: Real/Float
+  - is_member     : Boolean
+  - jumlah_buku   : Integer
+  - total_awal    : Real/Float
+  - persen_diskon : Real/Float
   - nominal_diskon: Real/Float
-  - total_bayar: Real/Float
+  - total_bayar   : Real/Float
 
-  B. Jenis struktur kontroL
+  B. Jenis struktur kontrol
   - percabangan
   - perulangan
 
 # Penyusunan Pseudocode
     PROGRAM KasirTokoBukuKitaV2
     DEKLARASI:
-       is_member      : boolean
-       total_awal     : real
-       jumlah_buku    : integer
-       persen_diskon  : real
-       nominal_diskon : real
-       total_bayar    : real
+       is_member     : boolean
+       total_awal    : real
+       jumlah_buku   : integer
+       persen_diskon : real
+       nominal_diskon: real
+       total_bayar   : real
     ALGORITMA:
        INPUT(is_member)
        REPEAT
@@ -47,3 +47,5 @@
        OUTPUT(total_bayar)
 
 # Uji Logika / Trace Table
+
+
