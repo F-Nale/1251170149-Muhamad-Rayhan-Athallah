@@ -1,15 +1,15 @@
 # Analisis Komponen
   A. Variabel dan tipe data
   - is_member     : Boolean
+  - total_awal    : Real
   - jumlah_buku   : Integer
-  - total_awal    : Real/Float
-  - persen_diskon : Real/Float
-  - nominal_diskon: Real/Float
-  - total_bayar   : Real/Float
+  - persen_diskon : Real
+  - nominal_diskon: Real
+  - total_bayar   : Real
 
   B. Jenis struktur kontrol
-  - percabangan
-  - perulangan
+  - percabangan:  Struktur percabangan adalah mekanisme logika untuk menentukan alur eksekusi program berdasarkan kondisi bernilai TRUE atau FALSE.
+  - perulangan: Struktur perulangan ini mengeksekusi blok perintah terlebih dahulu minimal satu kali sebelum memeriksa kondisinya di akhir, di mana pengulangan akan terus berjalan selama kondisi bernilai FALSE dan baru berhenti saat kondisi menjadi TRUE.
 
 # Penyusunan Pseudocode
     PROGRAM SistemKasirTokoBukuKita
