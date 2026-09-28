@@ -12,7 +12,7 @@
   - perulangan
 
 # Penyusunan Pseudocode
-    PROGRAM KasirTokoBukuKitaV2
+    PROGRAM SistemKasirTokoBukuKita
     DEKLARASI:
        is_member     : boolean
        total_awal    : real
