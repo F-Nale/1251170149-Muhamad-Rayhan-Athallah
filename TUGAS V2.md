@@ -47,8 +47,6 @@
        OUTPUT(total_bayar)
 
 # Uji Logika / Trace Table
-# Trace Table
-
 ## Kasus A
 `is_member = TRUE`, `total_awal = 250000`, `jumlah_buku = 4`
 
